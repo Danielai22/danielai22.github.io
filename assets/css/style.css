@@ -349,110 +349,141 @@ canvas {
     background: #fef1f1;
 
 }
-
-
-button {
-    margin: 20px;
+/*neon Button*/
+.a-n2,.a-n1{ margin-left: 20px;
+    text-decoration: none; position: relative;  padding: 15px 30px; overflow: hidden; transition: 0.2s all;  color: #db4557 ; text-transform: uppercase; letter-spacing: 4px;
 }
-.custom-btn {
-    width: 260px;
-    height: 50px;
-    font-size: 20px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    7px 7px 20px 0px rgba(0,0,0,.1),
-    4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-    text-decoration: none;
-
+.a-n1:hover{
+    background:#F4D03F; color: #000;
+    box-shadow: 0px 0px 10px #F4D03F, 0px 0px 40px#F4D03F, 0px 0px 80px #F4D03F; transition-delay: 1s;
 }
-/* 8 */
-.btn-8 {
-    background-color: #f0ecfc;
-    background-image:linear-gradient( #eaa4ac, #db4557 );
-    line-height: 42px;
-    padding: 0;
-    border: none;
-}
-.btn-8 span {
-    position: relative;
+.a-n2 span,.a-n1 span{
+    position: absolute;
     display: block;
+}
+.a-n1 span:nth-child(1){
+    top:0px;
+    left:-100%;
     width: 100%;
-    height: 100%;
-    text-align: center;
-}
-.btn-8:before,
-.btn-8:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    background: #eaa4ac;
-    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2),
-      inset -4px -4px 6px 0 rgba(255,255,255,.5),
-      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
-    transition: all 0.3s ease;
-}
-.btn-8:before{
-    height: 0%;
-    width: 2px;
-}
-.btn-8:after {
-    width: 0%;
     height: 2px;
+    background: linear-gradient(90deg,transparent,#F4D03F )
 }
-.btn-8:hover:before {
-    height: 100%;
+
+.a-n1:hover span:nth-child(1){
+
+    left:100%;
+    transition: 0.5s;
 }
-.btn-8:hover:after {
+
+
+.a-n1 span:nth-child(3){
+    bottom:0px;
+    right:-100%;
     width: 100%;
-}
-.btn-8:hover{
-    background: transparent;
-}
-.btn-8 span:hover{
-    color: #834249;
-}
-.btn-8 span:before,
-.btn-8 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    background: #eaa4ac;
-    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2),
-      inset -4px -4px 6px 0 rgba(255,255,255,.5),
-      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
-    transition: all 0.3s ease;
-}
-.btn-8 span:before {
-    width: 2px;
-    height: 0%;
-}
-.btn-8 span:after {
     height: 2px;
-    width: 0%;
+    background: linear-gradient(270deg,transparent,#F4D03F )
 }
-.btn-8 span:hover:before {
+
+.a-n1:hover span:nth-child(3){
+
+    right:100%;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+
+.a-n1 span:nth-child(2){
+    top:-100%;
+    right:0;
+    width:  2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#F4D03F )
+}
+
+.a-n1:hover span:nth-child(2){
+    top:100%;
+    transition: 0.5s; transition-delay: 0.25s;
+}
+
+.a-n1 span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width:  2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#F4D03F )
+}
+
+.a-n1:hover span:nth-child(4){
+    bottom:100%;
+    transition: 0.5s;  transition-delay: 0.75s;
+}
+
+
+.a-n2:hover{
+    background:#db4557 ; color: #fff;
+    box-shadow: 0px 0px 10px #db4557 , 0px 0px 40px#db4557 , 0px 0px 80px #db4557 ; transition-delay: 0.2s;
+}
+
+
+.a-n2 span:nth-child(1){
+    top: 0px;
+    left: -91%;
+    width: 100%;
+    height: 2px;
+    background: #db4557 ;
+}
+
+.a-n2:hover span:nth-child(1){
+
+    left:0%;
+    transition: 0.3s;
+}
+
+
+.a-n2 span:nth-child(3){
+    bottom: 0px;
+    right: -91%;
+    width: 100%;
+    height: 2px;
+    background: #db4557 ;
+}
+
+.a-n2:hover span:nth-child(3){
+
+    right:0%;
+    transition: 0.3s;
+}
+
+.a-n2 span:nth-child(2){
+    bottom: -70%;
+    right: 0%;
+    width: 2px;
+    FONT-WEIGHT: 100;
+    background: #db4557 ;
     height: 100%;
 }
-.btn-8 span:hover:after {
-    width: 100%;
+
+.a-n2:hover span:nth-child(2){
+
+    bottom:0%;
+    transition: 0.3s;
 }
 
 
 
+.a-n2 span:nth-child(4){
+    top: -70%;
+    left: 0%;
+    width: 2px;
+    FONT-WEIGHT: 100;
+    background: #db4557 ;
+    height: 100%;
+}
 
+.a-n2:hover span:nth-child(4){
 
+    top:0%;
+    transition: 0.3s;
+}
 
