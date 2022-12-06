@@ -47,7 +47,7 @@ if (elementExists) {
 
         update(delta) {
             ctx.globalCompositeOperation = 'hard-light'
-            ctx.fillStyle = `rgba(167, 130, 180, 0.3)`
+            ctx.fillStyle = `rgba(176, 133, 183, 0.3)`
             ctx.fillRect(0, 0, this.width, this.height)
 
             ctx.globalCompositeOperation = 'lighter'
