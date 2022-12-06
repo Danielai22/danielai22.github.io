@@ -1,6 +1,11 @@
 var elementExists = document.getElementById("birthday");
 
 if (elementExists) {
+    $('.js--cupcake').on('click', function(event) {
+        event.preventDefault();
+        var url = 'envelope.html'
+        location.replace(url);
+    });
     const PI2 = Math.PI * 2
     const random = (min, max) => Math.random() * (max - min + 1) + min | 0
     const timestamp = _ => new Date().getTime()
