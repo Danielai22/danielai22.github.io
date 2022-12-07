@@ -445,3 +445,49 @@ body {
         transform: translateY(0) scale(1);
     }
 }
+
+
+.neon-button {
+    font-size: 1rem;
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ff969f;
+    border: #ff969f 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+
+
+    position: relative;
+}
+
+
+.neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: #ff969f;
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+    color: white;
+    text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+    opacity: 1;
+}
+.neon-button:hover::after,
+.neon-button:focus::after {
+    opacity: 1;
+}
